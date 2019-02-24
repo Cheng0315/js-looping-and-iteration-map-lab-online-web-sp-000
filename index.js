@@ -7,7 +7,7 @@ function lowerCaseDrivers(arr) {
 
 function lowerCaseDrivers(arr) {
   return arr.map(function (driver) {
-    const driverArr = driver.split(" ")
+    let driverArr = driver.split(" ")
     return Object.assign({}, {firstName: driverArr[0]}, {lastName: driverArr[1]})
   })
 }
