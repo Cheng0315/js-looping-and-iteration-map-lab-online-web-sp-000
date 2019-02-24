@@ -4,3 +4,10 @@ function lowerCaseDrivers(arr) {
     return driver.toLowerCase();
   })
 }
+
+function lowerCaseDrivers(arr) {
+  return arr.map(function (driver) {
+    driverArr = driver.split(" ")
+    return Object.assign({}, {firstName: driverArr[0]}, {lastName: driverArr[1]})
+  })
+}
